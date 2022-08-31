@@ -41,5 +41,6 @@ I am recommending few city and places within that city which are famous and even
 # Quotes
 
 > “There are two ways of spreading light: to be the candle or the mirror that reflects it.”  – *Edith Wharton*
+
 > “You do not find the happy life. You make it.” – *Camilla Eyring Kimball*
 
