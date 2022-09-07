@@ -50,33 +50,21 @@ I am recommending few city and places within that city which are famous and even
 
 # wordpress
 
-> function my_enqueue($hook) {
-    if( 'edit.php' != $hook )
-        return;
-    wp_enqueue_script( 'my_custom_script', plugins_url('/myscript.js', __FILE__) );
-}
-add_action( 'admin_enqueue_scripts', 'my_enqueue' );
->> function load_custom_wp_admin_style() {
-        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
-        wp_enqueue_style( 'custom_wp_admin_css' );
-}
-add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+> How to select multiple files with <input type="file">?
+> \<form enctype='multipart/form-data' method='POST' action='submitFormTo.php'> 
+> \<input type='file' name='files[]' multiple />
+> \<button type='submit'>Submit</button>
+> \</form>
 
-stackoverflow page: <https://stackoverflow.com/questions/18553610/how-do-i-add-custom-css-and-js-files-to-admin-area-of-wordpress>
+stackoverflow page: <https://stackoverflow.com/questions/1593225/how-to-select-multiple-files-with-input-type-file>
 
 # css tricks
 
 ```
-add_action('admin_head', 'my_custom_fonts');
-
-function my_custom_fonts() {
-  echo '<style>
-    body, td, textarea, input, select {
-      font-family: "Lucida Grande";
-      font-size: 12px;
-    } 
-  </style>';
-}
+<form method="post" action="upload.php" enctype="multipart/form-data">
+  <input name='uploads[]' type="file" multiple>
+  <input type="submit" value="Send">
+</form>
 ```
-css-tricks page: <https://css-tricks.com/snippets/wordpress/apply-custom-css-to-admin-area/>
+css-tricks page: <https://css-tricks.com/snippets/html/multiple-file-input/>
 
