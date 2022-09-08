@@ -51,10 +51,7 @@ I am recommending few city and places within that city which are famous and even
 # HTML Code from stackoverflow
 
 > How to select multiple files with <input type="file">?
-> \<form enctype='multipart/form-data' method='POST' action='submitFormTo.php'> 
-> \<input type='file' name='files[]' multiple />
-> \<button type='submit'>Submit</button>
-> \</form>
+
 
 stackoverflow page: <https://stackoverflow.com/questions/1593225/how-to-select-multiple-files-with-input-type-file>
 
